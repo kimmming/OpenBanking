@@ -8,7 +8,7 @@ function Separator() {
 export default function App() {
   return (
     <View style = {styles.container}>
-      <Button title='Button'
+      <Button title='HiButton'
         onPress={() => Alert.alert("Clicked Button")}
       />
       <Separator />
