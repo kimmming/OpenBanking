@@ -17,8 +17,7 @@ const App = (): React.ReactElement => {
           component={LogoutScreen}
           options={{headerShown: false}}
         />
-        
-        
+            
       </Stack.Navigator>
     </NavigationContainer>
   );

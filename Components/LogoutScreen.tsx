@@ -13,8 +13,6 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-
-
 const LogoutScreen = (): React.ReactElement => {
   return (
     <View style={styles.container}>
