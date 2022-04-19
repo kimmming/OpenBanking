@@ -1,53 +1,29 @@
 import React from 'react';
-import { StyleSheet, Button, View, Text, Alert } from 'react-native'
+import {SafeAreaView, StyleSheet} from 'react-native';
+import LogoutScreen from '../Components/LogoutScreen';
 
-function Separator() {
-  return <View style={styles.separator} />;
-}
 
-export default function App() {
+import 'react-native-gesture-handler';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+const Stack = createStackNavigator();
+
+const App = (): React.ReactElement => { 
   return (
-    <View style = {styles.container}>
-      <Button title='HiButton'
-        onPress={() => Alert.alert("Clicked Button")}
-      />
-      <Separator />
-    </View>
-  )
-}
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginHorizontal: 16,
-  },
-  separator: {
-    marginVertical: 8,
-    borderBottomColor: '#737373',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
-  buttonSize: {
-    margin: 10
-  },
-  button:{
-    alignItems :"center",
-    backgroundColor:"purple",
-    padding: 10
-  }
-});
-// import {
-//   SafeAreaView,
-//   ScrollView,
-//   StatusBar,
-//   StyleSheet,
-//   Text,
-//   useColorScheme,
-//   View,
-// } from 'react-native';
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Logout"
+          component={LogoutScreen}
+          options={{headerShown: false}}
+        />
+        
+        
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
-// import {
-//   Colors,
-//   DebugInstructions,
-//   Header,
-//   LearnMoreLinks,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
+const styles = StyleSheet.create({});
+
+export default App;
