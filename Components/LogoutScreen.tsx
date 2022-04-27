@@ -13,7 +13,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-const LogoutScreen = (): React.ReactElement => {
+function LogoutScreen({navigation}: {navigation:any}) {
   return (
     <View style={styles.container}>
       <View style={{flex: 1.5}} />
@@ -25,7 +25,10 @@ const LogoutScreen = (): React.ReactElement => {
           />
         </View>
         <View style={styles.btnArea}>
-          <TouchableOpacity style={styles.btnoutline}>
+          <TouchableOpacity style={styles.btnoutline}
+          onPress={() => navigation.navigate('Login')}>
+          
+    
             <Text>LOGIN</Text>
           </TouchableOpacity>
         </View>

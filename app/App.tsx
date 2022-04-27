@@ -6,6 +6,7 @@ import LogoutScreen from '../Components/LogoutScreen';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import LoginScreen from '../Components/LoginScreen';
 const Stack = createStackNavigator();
 
 const App = (): React.ReactElement => { 
@@ -17,12 +18,16 @@ const App = (): React.ReactElement => {
           component={LogoutScreen}
           options={{headerShown: false}}
         />
-            
+        <Stack.Screen
+            name="Login"
+            component={LoginScreen}
+           / >  
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 const styles = StyleSheet.create({});
+
 
 export default App;
