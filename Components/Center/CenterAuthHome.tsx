@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 
 
 
-function HomeScreen({navigation}: {navigation: any}) {
+function CenterAuthHome({navigation}: {navigation: any}) {
   //const navigation = useNavigation();
 
   return (
@@ -15,22 +15,20 @@ function HomeScreen({navigation}: {navigation: any}) {
       alignItems:'center',
       justifyContent:'center',
     }}>
-          <Text>선택 화면 - 센터인증 또는 자체 인증</Text>
+          <Text>센터인증 메인화면 - 계좌등록 및 API 거래기능</Text>
           <Button
-            title = "센터 인증"
+            title = "계좌 등록"
             onPress={()=>
-              navigation.navigate('center')}
-              //CenterAuthHome으로
+            navigation.navigate('centerAuth')} //<- 링크
           />
           <Button
-            title = "자체인증"
-            onPress={()=>
-              navigation.navigate('self')}
-              //SelfAuthHome으로
+            title = "API 거래 기능"
+            // onPress={()=>
+            //   navigation.navigate('user')}
           />
       </View>
   );
 }
 
 
-export default HomeScreen;
+export default CenterAuthHome;
