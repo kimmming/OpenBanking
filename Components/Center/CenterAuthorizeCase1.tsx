@@ -1,6 +1,7 @@
 //게좌등록 확인 
+//CenterAuthAuthorizeCase1.java
 //center_auth_authorize_case1.xml
-//common_auth_authorize_case.xml
+
 import React,{Component, ReactElement} from 'react';
 
 import 'react-native-gesture-handler';
@@ -8,7 +9,7 @@ import { StyleSheet,View,Text,Button,TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
-function CenterAuthAccount({navigation}: {navigation: any}) {
+function CenterAuthorizeCase1({navigation}: {navigation: any}) {
     //const navigation = useNavigation();
   
     return (
@@ -34,4 +35,4 @@ function CenterAuthAccount({navigation}: {navigation: any}) {
   }
   
   
-  export default CenterAuthAccount;
+  export default CenterAuthorizeCase1;

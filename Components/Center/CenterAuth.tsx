@@ -21,12 +21,12 @@ function CenterAuth({navigation}: {navigation: any}) {
           <Button
             title = "신규 계좌등록 후 토큰발급"
             onPress={()=>
-              navigation.navigate('centerAuthAccount')}
+              navigation.navigate('centerAuthorize')}
           />
           <Button
             title = "기존 계좌확인 후 토큰발급"
-            onPress={()=>
-            navigation.navigate('centerAuthorize')}
+            // onPress={()=>
+            // navigation.navigate('')}
           />
           <Button
             title = "OOB 토큰발급(2-legged)"
