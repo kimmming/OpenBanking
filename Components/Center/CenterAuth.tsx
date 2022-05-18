@@ -21,7 +21,7 @@ function CenterAuth({navigation}: {navigation: any}) {
           color = {Color.purple}
           title = "신규 계좌등록 후 토큰발급"
           onPress={()=>
-            navigation.navigate('centerAuthAccount')}
+            navigation.navigate('centerAuthorize')}
         />
       </View>
       <View style = {styles.margin}>
