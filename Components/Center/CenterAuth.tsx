@@ -36,8 +36,8 @@ function CenterAuth({navigation}: {navigation: any}) {
        <Button
         color = {Color.purple}
         title = "OOB 토큰발급(2-legged)"
-          // onPress={()=>
-          //   navigation.navigate('self')}
+          onPress={()=>
+          navigation.navigate('centerAuthorTokenOob')}
         />
       </View>    
     </View>
