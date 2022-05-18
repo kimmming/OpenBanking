@@ -21,7 +21,7 @@ function CenterAuth({navigation}: {navigation: any}) {
           <Button
             title = "신규 계좌등록 후 토큰발급"
             onPress={()=>
-              navigation.navigate('centerAuthorize')}
+              navigation.navigate('centerAuthAuthorize')}
           />
           <Button
             title = "기존 계좌확인 후 토큰발급"
@@ -30,8 +30,8 @@ function CenterAuth({navigation}: {navigation: any}) {
           />
           <Button
             title = "OOB 토큰발급(2-legged)"
-            // onPress={()=>
-            //   navigation.navigate('self')}
+            onPress={()=>
+             navigation.navigate('centerAuthorTokenOob')}
           />
       </View>
   );
