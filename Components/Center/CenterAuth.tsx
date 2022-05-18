@@ -30,7 +30,7 @@ function CenterAuth({navigation}: {navigation: any}) {
           title = "기존 계좌확인 후 토큰발급"
           onPress={()=>
             navigation.navigate('centerAuthorize')}
-        />    
+        />  
       </View>
       <View style = {styles.margin}>
        <Button

@@ -1,3 +1,5 @@
+//center_auth_home.xml
+
 import React,{Component, ReactElement} from 'react';
 
 import 'react-native-gesture-handler';
