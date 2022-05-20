@@ -22,7 +22,7 @@ function HomeScreen({navigation}: {navigation: any}) {
         />
       </View>
       <View style = {styles.centeralign}>
-        <Text style = {styles.text} >선택 화면 - 센터인증 또는 자체 인증</Text>
+        <Text style = {styles.text}>선택 화면 - 센터인증 또는 자체 인증</Text>
       </View>
       
       <View style = {styles.margin}>
