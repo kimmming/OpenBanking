@@ -13,7 +13,7 @@ import CenerAuthAuthorize from './Components/Center/CenterAuthAuthorize';
 import CenterAuth from './Components/Center/CenterAuth';
 import CenterAuthorizeCase1 from './Components/Center/CenterAuthorizeCase1';
 import CenterAuthorizeCase3 from './Components/Center/CenterAuthorizeCase3';
-import centerAuthTokenRequestOob from './Components/Center/CenterAuthTokenRequestOob';
+import CenterAuthTokenRequestOob from './Components/Center/CenterAuthTokenRequestOob';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,7 +29,7 @@ function App() {
         <Stack.Screen name='centerAuthAuthorize' component={CenerAuthAuthorize}/>
         <Stack.Screen name='centerAuthorcase1' component={CenterAuthorizeCase1}/>
         <Stack.Screen name='centerAuthorcase3' component={CenterAuthorizeCase3}/>
-        <Stack.Screen name='centerAuthorTokenOob' component={centerAuthTokenRequestOob}/>
+        <Stack.Screen name='centerAuthorTokenOob' component={CenterAuthTokenRequestOob}/>
 
         
       </Stack.Navigator>

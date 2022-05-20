@@ -9,7 +9,7 @@ import { StyleSheet,View,Text,Button,TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 
-function centerAuthTokenRequestOob({navigation}: {navigation: any}) {
+function CenterAuthTokenRequestOob({navigation}: {navigation: any}) {
     //const navigation = useNavigation();
   
     return (
@@ -25,4 +25,4 @@ function centerAuthTokenRequestOob({navigation}: {navigation: any}) {
   }
   
   
-  export default centerAuthTokenRequestOob;
+  export default CenterAuthTokenRequestOob;
