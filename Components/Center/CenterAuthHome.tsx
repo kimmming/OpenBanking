@@ -16,7 +16,9 @@ function CenterAuthHome({navigation}: {navigation: any}) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>센터인증 메인화면 - 계좌등록 및 API 거래기능</Text>
+      <View style={styles.centeralign}>
+        <Text style={styles.text}>센터인증 메인화면 - 계좌등록 및 API 거래기능</Text>
+      </View>
       <View style = {styles.margin}>
        <Button
         color = {Color.purple}
@@ -43,6 +45,10 @@ const styles = StyleSheet.create({
     padding:10
     // alignItems:'center',
     // justifyContent:'center',
+  },
+  centeralign:{
+    alignItems:'center', // 가로 가운데 정렬
+    justifyContent:'center', // 세로 가운데 정렬
   },
   text:{
     fontSize: 15,

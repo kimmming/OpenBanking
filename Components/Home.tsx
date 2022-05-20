@@ -1,7 +1,6 @@
 import React,{Component, ReactElement} from 'react';
-
 import 'react-native-gesture-handler';
-import { StyleSheet,View,Text,Button,TouchableOpacity } from 'react-native';
+import { StyleSheet,View,Text,Button,TouchableOpacity, Image} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { color } from 'react-native-reanimated';
 
@@ -16,7 +15,16 @@ function HomeScreen({navigation}: {navigation: any}) {
   //const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Text style = {styles.text} >선택 화면 - 센터인증 또는 자체 인증</Text>
+      <View style={styles.centeralign}>
+        <Image
+          source = {require('../assets/image/mango-pay-removebg.png')}
+          style={{width: 200, height:200, marginTop:10, marginBottom:10}}
+        />
+      </View>
+      <View style = {styles.centeralign}>
+        <Text style = {styles.text} >선택 화면 - 센터인증 또는 자체 인증</Text>
+      </View>
+      
       <View style = {styles.margin}>
         <Button
           color = {Color.purple}
@@ -53,10 +61,12 @@ const styles = StyleSheet.create({
     // alignItems:'center',
     // justifyContent:'center',
   },
+  centeralign:{
+    alignItems:'center', // 가로 가운데 정렬
+    justifyContent:'center', // 세로 가운데 정렬
+  },
   text:{
-    fontSize: 15,
-    alignItems:'center',
-    justifyContent:'center',
+    fontSize: 15, 
     marginBottom:10
   },
   margin:{

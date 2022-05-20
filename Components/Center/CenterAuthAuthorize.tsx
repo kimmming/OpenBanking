@@ -13,13 +13,9 @@ function  CenerAuthAuthorize({navigation}: {navigation: any}) {
     //const navigation = useNavigation();
   
     return (
-      <View style={{
-        flex:1,
-        alignItems:'center',
-        justifyContent:'center',
-      }}>
-            <Text>위에 버튼이 있고 아래에 addtab으로
-              CenterAuthAuthorizeCase1, 3를 불러옴
+      <View style={styles.centeralign}>
+            <Text>위에 버튼이 있고 아래에 
+              addtab으로 CenterAuthAuthorizeCase1, 3를 불러옴
               
             </Text>
             
@@ -27,5 +23,18 @@ function  CenerAuthAuthorize({navigation}: {navigation: any}) {
     );
   }
   
-  
+  const styles = StyleSheet.create({
+    container :{
+      flex:1,
+      padding:10
+      // alignItems:'center',
+      // justifyContent:'center',
+    },
+    centeralign:{
+      flex:1,
+      alignItems:'center', // 가로 가운데 정렬
+      justifyContent:'center', // 세로 가운데 정렬
+    }
+  })
+
   export default CenerAuthAuthorize;

@@ -13,11 +13,7 @@ function CenterAuthorizeCase1({navigation}: {navigation: any}) {
     //const navigation = useNavigation();
   
     return (
-      <View style={{
-        flex:1,
-        alignItems:'center',
-        justifyContent:'center',
-      }}>
+      <View style={styles.centeralign}>
             <Text>(0)최초인증(CASE1) : 처음 오픈플래폼에 접속하는 사용자의 가입 및 인증 처리(본인인증 + ARS 조회/출금동의)</Text>
             <Text>(0)최초인증(CASE1) : 기 등록된 계좌를 재확인하고 토클재발급. 사용자정보 미보유시(본인인증 + 계좌내역확인)</Text>
             <Text>반환 형태(고정):</Text>
@@ -34,5 +30,18 @@ function CenterAuthorizeCase1({navigation}: {navigation: any}) {
     );
   }
   
+  const styles = StyleSheet.create({
+    container :{
+      flex:1,
+      padding:10
+      // alignItems:'center',
+      // justifyContent:'center',
+    },
+    centeralign:{
+      flex:1,
+      alignItems:'center', // 가로 가운데 정렬
+      justifyContent:'center', // 세로 가운데 정렬
+    }
+  })
   
   export default CenterAuthorizeCase1;
