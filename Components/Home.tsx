@@ -18,7 +18,7 @@ function HomeScreen({navigation}: {navigation: any}) {
       <View style={styles.centeralign}>
         <Image
           source = {require('../assets/image/mango-pay-removebg.png')}
-          style={{width: 200, height:200, marginTop:10, marginBottom:10}}
+          style={{width: 250, height:250, marginTop:10, marginBottom:10}}
         />
       </View>
       <View style = {styles.centeralign}>
